@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav > img {
+  width: 50px;
+}
+
+header {
+  background-image: url(/SoloRush/img/backgroung.jpg);
+  background-size: cover;
+}
+
+.about > img {
+  width: 200px;
+}
