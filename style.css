@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -6,7 +8,7 @@ body {
   margin: 0;
   line-height: 1.5;
   background-color: #4169b4;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto";
 }
 
 /* NAV */
@@ -14,6 +16,12 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
+  @media screen and (min-width: 900px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 2rem;
+  }
 }
 
 nav > img {
@@ -23,6 +31,9 @@ nav > img {
 nav > ul {
   margin: 0;
   padding: 0;
+  @media screen and (min-width: 900px) {
+    align-self: center;
+  }
 }
 
 nav > ul > li {
@@ -40,12 +51,28 @@ nav > ul > li > a {
 header {
   background-image: url(/SoloRush/img/backgroung.jpg);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+header > img {
+  display: none;
+  @media screen and (min-width: 900px) {
+    display: initial;
+    width: 200px;
+    border-radius: 50%;
+    align-self: center;
+    padding-top: 1rem;
+  }
 }
 
 header > h1,
 header > h2 {
   text-align: center;
   color: #f9ffeb;
+  @media screen and (min-width: 900px) {
+    text-shadow: #000000;
+  }
 }
 
 header > h2 {
@@ -58,6 +85,9 @@ header > h2 {
 main {
   text-align: left;
   padding: 0 1rem;
+  @media screen and (min-width: 900px) {
+    padding: 0 10rem;
+  }
 }
 /* ABOUT SECTION */
 
@@ -71,10 +101,13 @@ main {
   color: #f9ffeb;
 }
 
-.about > img {
+.about > .pp {
   width: 150px;
   align-self: center;
   border-radius: 50%;
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
 }
 
 main > .about > .about-article {
@@ -121,4 +154,5 @@ main > .projects > .projects-article {
 footer {
   display: flex;
   justify-content: center;
+  padding-top: 1rem;
 }
