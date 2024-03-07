@@ -5,19 +5,120 @@
 body {
   margin: 0;
   line-height: 1.5;
-  background-color: grey;
+  background-color: #4169b4;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav > img {
-  width: 50px;
+/* NAV */
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+
+nav > img {
+  width: 100px;
+  align-self: center;
+}
+nav > ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #f9ffeb;
+}
+
+/* HEADER */
 
 header {
   background-image: url(/SoloRush/img/backgroung.jpg);
   background-size: cover;
 }
 
+header > h1,
+header > h2 {
+  text-align: center;
+  color: #f9ffeb;
+}
+
+header > h2 {
+  font-weight: 500;
+  font-size: larger;
+  padding-bottom: 0.5rem;
+}
+/* MAIN */
+
+main {
+  text-align: left;
+  padding: 0 1rem;
+}
+/* ABOUT SECTION */
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about > h2 {
+  text-align: center;
+  color: #f9ffeb;
+}
+
 .about > img {
-  width: 200px;
+  width: 150px;
+  align-self: center;
+  border-radius: 50%;
+}
+
+main > .about > .about-article {
+  background-color: #cdd2f4;
+  padding: 1rem;
+  color: #3c3744;
+  font-size: small;
+  border-radius: 10px;
+}
+
+/* PROJECT SECTION */
+
+.projects > h2 {
+  text-align: center;
+  color: #f9ffeb;
+}
+
+main > .projects > .projects-article {
+  background-color: #cdd2f4;
+  padding: 1rem;
+  color: #3c3744;
+  font-size: small;
+  border-radius: 10px;
+}
+
+/* CONTACT SECTION */
+.contact > h2 {
+  text-align: center;
+  color: #f9ffeb;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #cdd2f4;
+  color: #3c3744;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
 }
