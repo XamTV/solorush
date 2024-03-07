@@ -54,7 +54,7 @@ nav > ul > li > a {
 /* HEADER */
 
 header {
-  background-image: url(/SoloRush/img/backgroung.jpg);
+  background-image: url(img/backgroung.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
