@@ -9,6 +9,11 @@ body {
   line-height: 1.5;
   background-color: #4169b4;
   font-family: "Roboto";
+  max-height: 100vh;
+  @media screen and (min-width: 900px) {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 /* NAV */
@@ -155,4 +160,5 @@ footer {
   display: flex;
   justify-content: center;
   padding-top: 1rem;
+  margin-top: auto;
 }
